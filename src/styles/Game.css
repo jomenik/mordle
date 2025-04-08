@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 553;
+
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #c9c9c9;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 553;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #686868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+.tile.correct {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: white;
+}
+
+.tile.present {
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: white;
+}
+
+.tile.absent {
+  background-color: #787c7e;
+  border-color: #787c7e;
+  color: white;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #161616;
+  font-weight: bold;
+  text-align: center;
+}
+
+.keyboard-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6aaa64;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.keyboard-toggle:hover {
+  background-color: #578a52;
+} 
